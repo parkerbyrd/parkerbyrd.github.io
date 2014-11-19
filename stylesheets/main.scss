@@ -18,6 +18,7 @@ html {
 
 .container-main {
     width: 100%;
+    max-width: 1300px;
     min-height: 200px;
     margin: 0 auto;
 }
@@ -176,6 +177,7 @@ nav {
 //////////////// Footer /////////////////
 
 footer {
+
     width: 100%;
     background-color: #989898;
     .main-footer {
@@ -257,7 +259,7 @@ footer {
 }
 
 ///////// What I'm Doing ////////
-
+.connect {
 .side-proj1 {
     width: 40%;
     float: left;
@@ -271,6 +273,7 @@ footer {
     width: 100%;
     max-width: 700px;
 
+}
 }
 
 
@@ -321,28 +324,29 @@ nav {
 
 ///// What I'm Doing /////
 
-
+.connect {
 
 .side-proj1 {
     width: 30%;
     float: left;
-    margin-right: 3.3333%;
+    margin-right: 5%;
     max-width: 500px;
 
 }
 .side-proj2 {
     width: 30%;
     float: left;
-    margin-right: 3.3333%;
+    margin-right: 5%;
     max-width: 500px;
 }
 .side-proj3 {
     clear: none;
     width: 30%;
     float: left;
-    margin-right: 3.3333%;
+    margin-right:0;
     max-width: 500px;
     
+}
 }
 
 

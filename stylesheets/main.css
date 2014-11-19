@@ -49,6 +49,7 @@ html {
 
 .container-main {
   width: 100%;
+  max-width: 1300px;
   min-height: 200px;
   margin: 0 auto; }
 
@@ -227,15 +228,13 @@ footer {
   .post3 {
     display: none; }
 
-  .side-proj1 {
+  .connect .side-proj1 {
     width: 40%;
     float: left; }
-
-  .side-proj2 {
+  .connect .side-proj2 {
     width: 40%;
     float: right; }
-
-  .side-proj3 {
+  .connect .side-proj3 {
     clear: both;
     width: 100%;
     max-width: 700px; } }
@@ -272,23 +271,21 @@ footer {
     float: left;
     margin-right: 3.3333%; }
 
-  .side-proj1 {
+  .connect .side-proj1 {
     width: 30%;
     float: left;
-    margin-right: 3.3333%;
+    margin-right: 5%;
     max-width: 500px; }
-
-  .side-proj2 {
+  .connect .side-proj2 {
     width: 30%;
     float: left;
-    margin-right: 3.3333%;
+    margin-right: 5%;
     max-width: 500px; }
-
-  .side-proj3 {
+  .connect .side-proj3 {
     clear: none;
     width: 30%;
     float: left;
-    margin-right: 3.3333%;
+    margin-right: 0;
     max-width: 500px; } }
 
 /*# sourceMappingURL=main.css.map */
