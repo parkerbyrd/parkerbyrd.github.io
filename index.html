@@ -1,22 +1,36 @@
 <html>
 	<head>
-		<title>Parker A. Byrd</title>
+		<title>Parker Byrd</title>
 		<link rel="stylesheet" href="stylesheets/main.css">
+		<link rel="stylesheet" href="js/responsive-nav/responsive-nav.css">
+		<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+		<script src="//use.typekit.net/rji7emj.js"></script>
+		<script>try{Typekit.load();}catch(e){}</script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
 		<div class="container-main">
 			<header class="bg-head">
+				<h1 class="myname">Parker Byrd</h1>
 				<div class="logo"></div>
-				<nav><span>&#9776;</span>
+				<nav>
+					<button>MENU</button>
 					<ul>
-						<li><a href="#porfolio">Portfolio</a></li>
-						<li><a href="#journal">Journal</a></li>
-						<li><a href="#contact">Contact</a></li>
+						<a href="#porfolio"><li>Portfolio</li></a>
+						<a href="#journal"><li>Journal</li></a>
+						<a href="#contact"><li>Contact</li></a>
 					</ul>
 				</nav>
+				<script>$('nav button').click(function(){
+				// Toggle the display class on and off
+				$('nav li').toggleClass('show-nav');
+				});</script>
+				<div class="welcome">
+					<p>Hi I'm Parker, and I am a web designer/developer living in Greenville, SC. I am currently a student at The Iron Yard, a code school here in Greenville. I will be seeking full-time/freelance work starting January 2015 and I am always interested in some extra projects and collaborations.
+					</p>
+				</div>
 			</header>
-			<div class="work">
+			<div class="work" id="portfolio">
 				<div class="project1"></div>
 				<div class="project2"></div>
 				<div class="project3"></div>
@@ -25,17 +39,17 @@
 			<div class="skills">
 				<h1>Skills</h1>
 				<div class="skillset-left">
-					<img src="http://www.fillmurray.com/200/200" alt="icon">
+					<div class="icon"></div>
 					<ul>
-						<li>HTML &amp; CSS</li>
-						<li>Sass + Bourbon</li>
-						<li>Javascript/Jquery</li>
-						<li>Ps and Ai</li>
+						<li>HTML</li>
+						<li>CSS3 + Sass</li>
+						<li>Javascript/Jquery (Interactive)</li>
+						<li>Responsive Web Design</li>
 						<li>Git</li>
 					</ul>
 				</div>
 				<div class="skillset-right">
-					<img src="http://www.fillmurray.com/200/200" alt="">
+					<div class="icon"></div>
 					<ul>
 						<li>Pizzaholic</li>
 						<li>Craft Beer Snob</li>
@@ -61,26 +75,26 @@
 				</div>
 			</div>
 			<div class="connect-bg">
-			<div class="connect">
-				<h1>What I'm Doing</h1>
-				<div class="side-proj1"></div>
-				<div class="side-proj2"></div>
-				<div class="side-proj3"></div>
-				<p>I'd Love to collaborate with you! You can find me on <a href="http://www.github.com/parkerbyrd">Github</a>, or get in touch with me right here</p>
+				<div class="connect" id="contact">
+					<h1>What I'm Doing</h1>
+					<div class="side-proj1"></div>
+					<div class="side-proj2"></div>
+					<div class="side-proj3"></div>
+					<p>I'd Love to collaborate with you! You can find me on <a href="http://www.github.com/parkerbyrd">Github</a>, or get in touch with me right here</p>
+				</div>
 			</div>
-		</div>
 			<footer>
-			<div class="main-footer">
-				<img src="http://www.fillmurray.com/100/100" alt="Me">
-				<ul>
-					<li><a href="http://www.github.com/parkerbyrd">Github</a></li>
-					<li><a href="http://www.instagram.com/parkerabyrd">Instagram</a></li>
-					<li><a href="http://www.twitter.com/parkerabyrd">Twitter</a></li>
-					<li><a href="parkerbyrd.vsco.co">VSCO</a></li>
-				</ul>
-			</div>
+				<div class="main-footer">
+					<img src="http://www.fillmurray.com/100/100" alt="Me">
+					<ul>
+						<li><a href="http://www.github.com/parkerbyrd">Github</a></li>
+						<li><a href="http://www.instagram.com/parkerabyrd">Instagram</a></li>
+						<li><a href="http://www.twitter.com/parkerabyrd">Twitter</a></li>
+						<li><a href="parkerbyrd.vsco.co">VSCO</a></li>
+					</ul>
+				</div>
 			</footer>
-
 		</div>
+		
 	</body>
 </html>

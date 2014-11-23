@@ -73,9 +73,17 @@ p, li {
   line-height: 1.7; }
 
 .bg-head {
-  background-color: #989898;
+  background-image: url("../images/parker.jpg");
   background-size: cover;
   min-height: 300px; }
+
+.myname {
+  font-family: "aw-conqueror-carved",sans-serif;
+  font-size: 90px;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  top: -30px; }
 
 nav {
   position: relative;
@@ -83,10 +91,17 @@ nav {
   right: 20px;
   float: right; }
   nav li {
-    display: none;
-    margin-left: 30px; }
-  nav span {
-    font-size: 50px; }
+    display: none; }
+  nav button {
+    padding: 15px 20px 15px 20px;
+    border: 1px solid #fff;
+    outline: none;
+    color: #FFF;
+    font-size: 1em;
+    float: right; }
+
+.show-nav nav li {
+  display: block; }
 
 .logo {
   position: relative;
@@ -97,6 +112,18 @@ nav {
   width: 50px;
   height: 50px; }
 
+.welcome {
+  position: relative;
+  top: 200px;
+  width: 50%;
+  max-height: 200px;
+  padding: 20px;
+  background-color: white;
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.54);
+  -moz-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.54);
+  box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.54); }
+
 .work div {
   width: 100%;
   min-height: 100px;
@@ -105,7 +132,7 @@ nav {
 
 .skills {
   min-height: 600px;
-  background-color: #c0c0c0;
+  background-color: #80bbd9;
   clear: both;
   padding-top: 30px; }
   .skills h1 {
@@ -120,9 +147,16 @@ nav {
   .skillset-left li, .skillset-right li {
     font-family: "Helvetica Neue";
     font-weight: 100; }
-  .skillset-left img, .skillset-right img {
+  .skillset-left .icon, .skillset-right .icon {
+    margin: 0 auto;
+    height: 200px;
+    max-width: 200px;
+    background-color: white;
     margin-bottom: 20px;
-    border-radius: 50%; }
+    border-radius: 50%;
+    -webkit-box-shadow: 2px 2px 30px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 2px 2px 30px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 2px 2px 30px 0px rgba(50, 50, 50, 0.75); }
 
 .journal {
   width: 80%;
@@ -139,7 +173,7 @@ nav {
 .connect-bg {
   clear: both;
   width: 100%;
-  background-color: #d8d8d8; }
+  background-color: #80bbd9; }
 
 .connect {
   width: 80%;
@@ -184,16 +218,16 @@ footer {
     min-height: 400px; }
 
   nav {
-    width: 30%;
+    min-width: 250px;
     float: right;
     position: relative;
     top: 50px;
     margin-right: 5%; }
-    nav span {
-      display: none; }
     nav li {
       display: inline-block;
       margin-left: 5%; }
+    nav button {
+      display: none; }
 
   .logo {
     position: relative;
@@ -242,9 +276,6 @@ footer {
   .logo {
     width: 200px;
     height: 100px; }
-
-  nav {
-    width: 20%; }
 
   .bg-head {
     min-height: 500px; }
