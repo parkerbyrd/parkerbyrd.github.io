@@ -148,15 +148,43 @@ nav {
     float: left; }
     .work div a:hover {
       background-color: darken; }
-  .work img {
+  .work a {
     width: 100%;
     max-height: 200px; }
+  .work .project1 {
+    background-image: url("../images/checklist.png");
+    background-size: cover; }
+  .work .project2 {
+    background-image: url("../images/styleguide.png");
+    background-size: cover; }
+  .work .project3 {
+    background-image: url("../images/dentist.png");
+    background-size: cover; }
+  .work .project4 {
+    background-image: url("../images/portfolio.png");
+    background-size: cover; }
+  .work #overlay {
+    background: rgba(0, 0, 0, 0.75);
+    text-align: center;
+    padding: 45px 0 66px 0;
+    opacity: 0;
+    -webkit-transition: opacity .25s ease;
+    -moz-transition: opacity .25s ease; }
+    .work #overlay span {
+      font-size: 2em;
+      font-family: "Helvetica Neue";
+      position: relative;
+      top: 10px;
+      color: white; }
+  .work div:hover #overlay {
+    opacity: 1; }
 
 .skills {
   min-height: 600px;
   background-color: #80bbd9;
   clear: both;
-  padding-top: 30px; }
+  padding-top: 30px;
+  padding-bottom: 30px; }
   .skills h1 {
     text-align: center;
     margin-bottom: 20px; }
@@ -191,6 +219,7 @@ nav {
   font-size: 50px; }
 
 .journal {
+  padding-top: 20px;
   width: 80%;
   margin: 0 auto;
   margin-bottom: 50px; }
@@ -303,6 +332,8 @@ footer {
     float: left; }
   .work img {
     height: 140px; }
+  .work #overlay {
+    width: 100%; }
 
   .skills h1 {
     margin-bottom: 40px; }

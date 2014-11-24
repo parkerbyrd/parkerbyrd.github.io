@@ -55,9 +55,7 @@ p, li {
 
 .bg-head {
     background-image: url("../images/parker.jpg");
-    
     background-size: cover;
-
     min-height: 300px;
 }
 
@@ -81,8 +79,8 @@ nav {
     li {
         display: none;
         &:hover {
-            border-bottom:3px solid $primary-color-1; 
-                   }
+            border-bottom: 3px solid $primary-color-1;
+        }
     }
     button {
         padding: 15px 20px 15px 20px;
@@ -158,9 +156,43 @@ nav {
             background-color: darken;
         }
     }
-    img {
+    a {
         width: 100%;
         max-height: 200px;
+    }
+    .project1 {
+        background-image: url("../images/checklist.png");
+        background-size: cover;
+    }
+    .project2 {
+        background-image: url("../images/styleguide.png");
+        background-size: cover;
+    }
+    .project3 {
+        background-image: url("../images/dentist.png");
+        background-size: cover;
+    }
+    .project4 {
+        background-image: url("../images/portfolio.png");
+        background-size: cover;
+    }
+    #overlay {
+        background: rgba(0, 0, 0, 0.75);
+        text-align: center;
+        padding: 45px 0 66px 0;
+        opacity: 0;
+        -webkit-transition: opacity .25s ease;
+        -moz-transition: opacity .25s ease;
+        span{
+        font-size: 2em;
+        font-family: $header-font;
+        position: relative;
+        top: 10px;
+        color: white;
+    }
+    }
+    div:hover #overlay {
+        opacity: 1;
     }
 }
 
@@ -170,6 +202,7 @@ nav {
     background-color: $primary-color-1;
     clear: both;
     padding-top: 30px;
+    padding-bottom: 30px;
     h1 {
         text-align: center;
         margin-bottom: 20px;
@@ -212,6 +245,7 @@ nav {
 
 //////////////// Journal //////////////
 .journal {
+    padding-top: 20px;
     width: 80%;
     margin: 0 auto;
     margin-bottom: 50px;
@@ -270,8 +304,8 @@ footer {
         padding-top: 20px;
         img {
             float: left;
-            width:96px;
-            height:56px;
+            width: 96px;
+            height: 56px;
         }
         ul {
             float: right;
@@ -279,19 +313,17 @@ footer {
             padding-top: 20px;
             li {
                 display: inline-block;
-            
-            a {
-
-                font-family: $header-font;
-                color: white;
-                &:hover {
-                    color: darken(white, 15%);
+                a {
+                    font-family: $header-font;
+                    color: white;
+                    &:hover {
+                        color: darken(white, 15%);
+                    }
+                    img {
+                        width: 32px;
+                        height: 32px;
+                    }
                 }
-                img {
-                    width:32px;
-                    height:32px;
-                }
-            }
             }
         }
         .ig-b- {
@@ -361,6 +393,10 @@ footer {
         img {
             height: 140px;
         }
+        #overlay {
+            width:100%;
+
+        }
     }
     .skills {
         h1 {
@@ -403,11 +439,10 @@ footer {
     footer {
         .main-footer {
             img {
-            
-            width:192px;
-            height:112px;
+                width: 192px;
+                height: 112px;
+            }
         }
-    }
     }
 }
 
