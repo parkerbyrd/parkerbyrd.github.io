@@ -90,6 +90,8 @@ nav {
   width: 100%;
   font-weight: 200; }
   nav li {
+    font-weight: 200;
+    color: black;
     display: none; }
     nav li:hover {
       border-bottom: 3px solid #80bbd9; }
@@ -196,7 +198,7 @@ nav {
   margin-bottom: 30px; }
   .skillset-left li, .skillset-right li {
     font-family: "Helvetica Neue";
-    font-weight: 100; }
+    font-weight: 200; }
   .skillset-left .icon, .skillset-right .icon {
     margin: 0 auto;
     height: 200px;
@@ -254,7 +256,7 @@ nav {
     margin-bottom: 40px; }
   .connect p {
     clear: both;
-    font-weight: 100;
+    font-weight: 200;
     text-align: center; }
 
 footer {

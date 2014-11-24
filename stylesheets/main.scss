@@ -77,6 +77,8 @@ nav {
     width: 100%;
     font-weight: 200;
     li {
+        font-weight: 200;
+        color: black;
         display: none;
         &:hover {
             border-bottom: 3px solid $primary-color-1;
@@ -216,7 +218,7 @@ nav {
     margin-bottom: 30px;
     li {
         font-family: $header-font;
-        font-weight: 100;
+        font-weight: 200;
     }
     .icon {
         margin: 0 auto;
@@ -288,7 +290,7 @@ nav {
     }
     p {
         clear: both;
-        font-weight: 100;
+        font-weight: 200;
         text-align: center;
     }
 }
