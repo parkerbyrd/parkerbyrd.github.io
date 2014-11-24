@@ -53,23 +53,23 @@ html {
   min-height: 200px;
   margin: 0 auto; }
 
-h1, h3, h5, h6, nav {
+h1, h3, h5, h6 {
   font-family: "Helvetica Neue";
   font-weight: 100; }
 
 h1 {
-  font-size: 60px; }
+  font-size: 3.75em; }
 
 h2 {
-  font-size: 40px;
+  font-size: 2.5em;
   font-style: italic; }
 
 h3 {
-  font-size: 40px; }
+  font-size: 2.5em; }
 
 p, li {
   font-family: "Helvetica Neue";
-  font-size: 18px;
+  font-size: 1.125em;
   line-height: 1.7; }
 
 .bg-head {
@@ -79,19 +79,20 @@ p, li {
 
 .myname {
   font-family: "aw-conqueror-carved",sans-serif;
-  font-size: 90px;
+  font-size: 5.6em;
   text-align: center;
   margin: 0 auto;
-  position: relative;
-  top: -30px; }
+  margin-top: -25px; }
+  .myname span {
+    color: white; }
 
 nav {
-  position: relative;
-  top: 20px;
-  right: 20px;
-  float: right; }
+  width: 100%;
+  font-weight: 200; }
   nav li {
     display: none; }
+    nav li:hover {
+      border-bottom: 3px solid #80bbd9; }
   nav button {
     padding: 15px 20px 15px 20px;
     border: 1px solid #fff;
@@ -104,31 +105,52 @@ nav {
   display: block; }
 
 .logo {
-  position: relative;
-  top: 20px;
-  left: 20px;
+  margin-left: 20px;
   float: left;
   background-color: #787878;
   width: 50px;
   height: 50px; }
 
 .welcome {
-  position: relative;
-  top: 200px;
+  clear: both;
   width: 50%;
-  max-height: 200px;
+  min-height: 100px;
+  min-width: 100px;
   padding: 20px;
   background-color: white;
   margin: 0 auto;
+  margin-top: 60px;
   -webkit-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.54);
   -moz-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.54);
-  box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.54); }
+  box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.54);
+  display: none; }
+  .welcome p {
+    font-size: 1em;
+    font-family: "Helvetica Neue"; }
 
-.work div {
+.alt-welcome {
   width: 100%;
-  min-height: 100px;
-  border: 1px solid;
-  float: left; }
+  min-height: 200px;
+  padding: 20px;
+  background-color: #80bbd9; }
+  .alt-welcome p {
+    width: 90%;
+    max-width: 500px;
+    font-family: "Helvetica Neue";
+    margin: 0 auto; }
+
+.work {
+  max-height: 400px;
+  width: 100%; }
+  .work div {
+    box-sizing: border-box;
+    width: 100%;
+    float: left; }
+    .work div a:hover {
+      background-color: darken; }
+  .work img {
+    width: 100%;
+    max-height: 200px; }
 
 .skills {
   min-height: 600px;
@@ -157,6 +179,16 @@ nav {
     -webkit-box-shadow: 2px 2px 30px 0px rgba(50, 50, 50, 0.75);
     -moz-box-shadow: 2px 2px 30px 0px rgba(50, 50, 50, 0.75);
     box-shadow: 2px 2px 30px 0px rgba(50, 50, 50, 0.75); }
+
+.skillset-left p {
+  font-family: "jaf-mashine-rounded";
+  padding-top: 65px;
+  font-size: 45px; }
+
+.skillset-right p {
+  font-family: "elina-web-decor";
+  padding-top: 55px;
+  font-size: 50px; }
 
 .journal {
   width: 80%;
@@ -189,7 +221,6 @@ nav {
     width: 90%;
     max-width: 300px;
     min-height: 200px;
-    background: #989898;
     margin: 0 auto;
     margin-bottom: 40px; }
   .connect p {
@@ -199,35 +230,63 @@ nav {
 
 footer {
   width: 100%;
-  background-color: #989898; }
+  background-color: #095175; }
   footer .main-footer {
     width: 80%;
     min-height: 200px;
     margin: 0 auto;
     padding-top: 20px; }
     footer .main-footer img {
-      float: left; }
+      float: left;
+      width: 96px;
+      height: 56px; }
     footer .main-footer ul {
       float: right;
-      padding-right: 20px; }
-      footer .main-footer ul a {
-        font-family: "Helvetica Neue"; }
+      padding-right: 20px;
+      padding-top: 20px; }
+      footer .main-footer ul li {
+        display: inline-block; }
+        footer .main-footer ul li a {
+          font-family: "Helvetica Neue";
+          color: white; }
+          footer .main-footer ul li a:hover {
+            color: #d9d9d9; }
+          footer .main-footer ul li a img {
+            width: 32px;
+            height: 32px; }
+    footer .main-footer .ig-b- {
+      display: inline-block; }
+    footer .main-footer .ig-b- img {
+      visibility: hidden; }
+    footer .main-footer .ig-b-:hover {
+      background-position: 0 -60px; }
+    footer .main-footer .ig-b-:active {
+      background-position: 0 -120px; }
+    footer .main-footer .ig-b-24 {
+      width: 32px;
+      height: 32px;
+      background: url(//badges.instagram.com/static/images/ig-badge-sprite-24.png) no-repeat 0 0; }
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+      footer .main-footer .ig-b-24 {
+        background-image: url(//badges.instagram.com/static/images/ig-badge-sprite-24@2x.png);
+        background-size: 60px 178px; } }
 
 @media screen and (min-width: 480px) {
   .bg-head {
     min-height: 400px; }
 
   nav {
+    width: 40%;
     min-width: 250px;
-    float: right;
-    position: relative;
-    top: 50px;
-    margin-right: 5%; }
+    float: right; }
     nav li {
       display: inline-block;
       margin-left: 5%; }
     nav button {
       display: none; }
+
+  .myname span {
+    color: black; }
 
   .logo {
     position: relative;
@@ -241,8 +300,9 @@ footer {
   .work div {
     width: 50%;
     min-height: 100px;
-    border: 1px solid #000000;
     float: left; }
+  .work img {
+    height: 140px; }
 
   .skills h1 {
     margin-bottom: 40px; }
@@ -271,7 +331,11 @@ footer {
   .connect .side-proj3 {
     clear: both;
     width: 100%;
-    max-width: 700px; } }
+    max-width: 700px; }
+
+  footer .main-footer img {
+    width: 192px;
+    height: 112px; } }
 @media screen and (min-width: 980px) {
   .logo {
     width: 200px;
@@ -285,6 +349,15 @@ footer {
 
   .main-footer {
     max-width: 70%; }
+
+  .welcome {
+    display: block; }
+
+  .alt-welcome {
+    display: none; }
+
+  .work img {
+    height: 200px; }
 
   .post1 {
     width: 30%;

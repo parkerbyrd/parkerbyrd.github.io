@@ -7,6 +7,8 @@ $primary-color-2: #095175;
 $primary-color-3: #7c602d;
 $header-font: "Helvetica Neue";
 $main-font: "Garamond";
+$design-font: "elina-web-decor";
+$code-font: "jaf-mashine-rounded";
 
 html {
     box-sizing: border-box;
@@ -25,55 +27,62 @@ html {
 
 /////////////// Page Styles  ///////////////
 
-h1, h3, h5, h6, nav {
+h1, h3, h5, h6 {
     font-family: $header-font;
     font-weight: 100;
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 3.75em;
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 2.5em;
     font-style: italic;
 }
 
 h3 {
-    font-size: 40px;
+    font-size: 2.5em;
 }
 
 p, li {
     font-family: $header-font;
-    font-size: 18px;
+    font-size: 1.125em;
     line-height: 1.7;
 }
 
 /////////////// Header ////////////////////
 
 .bg-head {
-    background-image: url('../images/parker.jpg');
+    background-image: url("../images/parker.jpg");
+    
     background-size: cover;
+
     min-height: 300px;
-
 }
-.myname {
-  font-family: "aw-conqueror-carved",sans-serif;
-  font-size: 90px;
-  text-align: center;
-  margin: 0 auto;
-  position: relative;
-  top: -30px;
 
-  }
+.myname {
+    font-family: "aw-conqueror-carved",sans-serif;
+    font-size: 5.6em;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: -25px;
+    span {
+        color: white;
+    }
+    // position: absolute;
+    // top: -25px;
+    // left: 300px;
+}
 
 nav {
-    position: relative;
-    top: 20px;
-    right: 20px;
-    float: right;
+    width: 100%;
+    font-weight: 200;
     li {
         display: none;
+        &:hover {
+            border-bottom:3px solid $primary-color-1; 
+                   }
     }
     button {
         padding: 15px 20px 15px 20px;
@@ -94,36 +103,64 @@ nav {
 }
 
 .logo {
-    position: relative;
-    top: 20px;
-    left: 20px;
+    margin-left: 20px;
     float: left;
     background-color: #787878;
     width: 50px;
     height: 50px;
 }
+
 .welcome {
-    position: relative;
-    top: 200px;
+    // position: relative;
+    // top: 200px;
+    clear: both;
     width: 50%;
-    max-height: 200px;
+    min-height: 100px;
+    min-width: 100px;
     padding: 20px;
     background-color: white;
     margin: 0 auto;
+    margin-top: 60px;
     -webkit-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.54);
--moz-box-shadow:    0px 0px 18px 0px rgba(0, 0, 0, 0.54);
-box-shadow:         0px 0px 18px 0px rgba(0, 0, 0, 0.54);
+    -moz-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.54);
+    box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.54);
+    display: none;
+    p {
+        font-size: 1em;
+        font-family: $header-font;
+    }
+}
 
-
+.alt-welcome {
+    width: 100%;
+    min-height: 200px;
+    padding: 20px;
+    background-color: $primary-color-1;
+    p {
+        width: 90%;
+        max-width: 500px;
+        font-family: $header-font;
+        margin: 0 auto;
+    }
 }
 
 /////////////  Portfolio   ////////////////
 .work {
+    max-height: 400px;
+    width: 100%;
     div {
+        box-sizing: border-box;
         width: 100%;
-        min-height: 100px;
-        border: 1px solid;
+        // min-height: 100px;
+        // border: 1px solid black;
         float: left;
+        a:hover {
+            background-color: darken;
+        }
+    }
+    img {
+        width: 100%;
+        max-height: 200px;
     }
 }
 
@@ -156,9 +193,21 @@ box-shadow:         0px 0px 18px 0px rgba(0, 0, 0, 0.54);
         margin-bottom: 20px;
         border-radius: 50%;
         -webkit-box-shadow: 2px 2px 30px 0px rgba(50, 50, 50, 0.75);
--moz-box-shadow:    2px 2px 30px 0px rgba(50, 50, 50, 0.75);
-box-shadow:         2px 2px 30px 0px rgba(50, 50, 50, 0.75);
+        -moz-box-shadow: 2px 2px 30px 0px rgba(50, 50, 50, 0.75);
+        box-shadow: 2px 2px 30px 0px rgba(50, 50, 50, 0.75);
     }
+}
+
+.skillset-left p {
+    font-family: $code-font;
+    padding-top: 65px;
+    font-size: 45px;
+}
+
+.skillset-right p {
+    font-family: $design-font;
+    padding-top: 55px;
+    font-size: 50px;
 }
 
 //////////////// Journal //////////////
@@ -200,7 +249,6 @@ box-shadow:         2px 2px 30px 0px rgba(50, 50, 50, 0.75);
         width: 90%;
         max-width: 300px;
         min-height: 200px;
-        background: #989898;
         margin: 0 auto;
         margin-bottom: 40px;
     }
@@ -214,7 +262,7 @@ box-shadow:         2px 2px 30px 0px rgba(50, 50, 50, 0.75);
 //////////////// Footer /////////////////
 footer {
     width: 100%;
-    background-color: #989898;
+    background-color: $primary-color-2;
     .main-footer {
         width: 80%;
         min-height: 200px;
@@ -222,12 +270,51 @@ footer {
         padding-top: 20px;
         img {
             float: left;
+            width:96px;
+            height:56px;
         }
         ul {
             float: right;
             padding-right: 20px;
+            padding-top: 20px;
+            li {
+                display: inline-block;
+            
             a {
+
                 font-family: $header-font;
+                color: white;
+                &:hover {
+                    color: darken(white, 15%);
+                }
+                img {
+                    width:32px;
+                    height:32px;
+                }
+            }
+            }
+        }
+        .ig-b- {
+            display: inline-block;
+        }
+        .ig-b- img {
+            visibility: hidden;
+        }
+        .ig-b-:hover {
+            background-position: 0 -60px;
+        }
+        .ig-b-:active {
+            background-position: 0 -120px;
+        }
+        .ig-b-24 {
+            width: 32px;
+            height: 32px;
+            background: url(//badges.instagram.com/static/images/ig-badge-sprite-24.png) no-repeat 0 0;
+        }
+        @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+            .ig-b-24 {
+                background-image: url(//badges.instagram.com/static/images/ig-badge-sprite-24@2x.png);
+                background-size: 60px 178px;
             }
         }
     }
@@ -239,17 +326,20 @@ footer {
         min-height: 400px;
     }
     nav {
+        width: 40%;
         min-width: 250px;
         float: right;
-        position: relative;
-        top: 50px;
-        margin-right: 5%;
         li {
             display: inline-block;
             margin-left: 5%;
         }
         button {
             display: none;
+        }
+    }
+    .myname {
+        span {
+            color: black;
         }
     }
     .logo {
@@ -265,8 +355,11 @@ footer {
         div {
             width: 50%;
             min-height: 100px;
-            border: 1px solid $primary-text;
+            // border: 1px solid $primary-text;
             float: left;
+        }
+        img {
+            height: 140px;
         }
     }
     .skills {
@@ -307,6 +400,15 @@ footer {
             max-width: 700px;
         }
     }
+    footer {
+        .main-footer {
+            img {
+            
+            width:192px;
+            height:112px;
+        }
+    }
+    }
 }
 
 // media tag
@@ -326,6 +428,17 @@ footer {
     }
     .main-footer {
         max-width: 70%;
+    }
+    .welcome {
+        display: block;
+    }
+    .alt-welcome {
+        display: none;
+    }
+    .work {
+        img {
+            height: 200px;
+        }
     }
     ////////////  Journal   /////////
     .post1 {

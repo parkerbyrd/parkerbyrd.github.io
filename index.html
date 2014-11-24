@@ -3,20 +3,21 @@
 		<title>Parker Byrd</title>
 		<link rel="stylesheet" href="stylesheets/main.css">
 		<link rel="stylesheet" href="js/responsive-nav/responsive-nav.css">
-		<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script src="//use.typekit.net/rji7emj.js"></script>
 		<script>try{Typekit.load();}catch(e){}</script>
+		<script src="js/flextype.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
 		<div class="container-main">
 			<header class="bg-head">
-				<h1 class="myname">Parker Byrd</h1>
-				<div class="logo"></div>
+				<h1 class="myname">Parker <span>Byrd</span></h1>
+				
 				<nav>
 					<button>MENU</button>
 					<ul>
-						<a href="#porfolio"><li>Portfolio</li></a>
+						<a href="#portfolio"><li>Portfolio</li></a>
 						<a href="#journal"><li>Journal</li></a>
 						<a href="#contact"><li>Contact</li></a>
 					</ul>
@@ -30,71 +31,110 @@
 					</p>
 				</div>
 			</header>
+			<div class="alt-welcome">
+				<p>Hi I'm Parker, and I am a web designer/developer living in Greenville, SC. I am currently a student at The Iron Yard, a code school here in Greenville. I will be seeking full-time/freelance work starting January 2015 and I am always interested in some extra projects and collaborations.
+				</p>
+			</div>
 			<div class="work" id="portfolio">
-				<div class="project1"></div>
-				<div class="project2"></div>
-				<div class="project3"></div>
-				<div class="project4"></div>
+				<div class="project1">
+					<a href="http://parkerbyrd.github.io/web-design-checklist/"><img src="images/checklist.png" alt=""></a>
+				</div>
+				<div class="project2">
+					<a href="http://parkerbyrd.github.io/dentist-style-guides/"><img src="images/styleguide.png" alt="styleguide"></a>
+				</div>
+				<div class="project3">
+					<a href="http://parkerbyrd.github.io/dentist-office-website/"><img src="images/dentist.png" alt=""></a>
+				</div>
+				<div class="project4">
+					<a href="http://parkerbyrd.github.io/parkerabyrd/"><img src="images/portfolio.png" alt=""></a>
+				</div>
 			</div>
 			<div class="skills">
 				<h1>Skills</h1>
 				<div class="skillset-left">
-					<div class="icon"></div>
+					<div class="icon">
+						<p>CODE</p>
+					</div>
 					<ul>
 						<li>HTML</li>
 						<li>CSS3 + Sass</li>
 						<li>Javascript/Jquery (Interactive)</li>
 						<li>Responsive Web Design</li>
-						<li>Git</li>
+						<li>Git &amp; Github</li>
+						<li>Command Line</li>
 					</ul>
 				</div>
 				<div class="skillset-right">
-					<div class="icon"></div>
+					<div class="icon">
+						<p>Design</p>
+					</div>
 					<ul>
-						<li>Pizzaholic</li>
-						<li>Craft Beer Snob</li>
-						<li>Road Biker</li>
-						<li>Adventurer</li>
-						<li>All-around Great Guy</li>
+						<li>Photoshop</li>
+						<li>Illustrator</li>
+						<li>Typography</li>
+						<li>Content Strategy</li>
+						<li>UI Design</li>
+						<li>UX Development</li>
 					</ul>
 				</div>
 			</div>
 			<div class="journal" id="journal">
 				<h1>Journal</h1>
 				<div class="post1">
-					<h3>Title</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, magni corrupti molestiae placeat, obcaecati saepe animi atque autem dolores! Incidunt, explicabo earum officia expedita sint eos voluptates consequuntur maxime iste.&#8594;</p>
+					<h3>TIY Week 7</h3>
+					<p>It's been 7 weeks into code school and things are looking up. I've been worried lately about if I'd be job ready by the end, which is something I was worried about from the beginning. This week has proven to be successful for me. We were introduced to new languages and preprocessors: Sass, Git, command line, and Markdown. &#8594;</p>
 				</div>
 				<div class="post2">
-					<h3>Title</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, magni corrupti molestiae placeat, obcaecati saepe animi atque autem dolores! Incidunt, explicabo earum officia expedita sint eos voluptates consequuntur maxime iste.&#8594;</p>
+					<h3>Class Trip</h3>
+					<p>Yesterday we took a field trip to a large design agency, and it could not have come at a better time.
+					They were really helpful in showing the process behind what they do and they answered a ton of questions I had about what the day to day life of a developer or designer looks like. Its really interesting seeing how a big firm does things. &#8594;</p>
 				</div>
 				<div class="post3">
-					<h3>Title</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, magni corrupti molestiae placeat, obcaecati saepe animi atque autem dolores! Incidunt, explicabo earum officia expedita sint eos voluptates consequuntur maxime iste.&#8594;</p>
+					<h3>TIY Week 4</h3>
+					<p>It's been 4 weeks since I stared the Web Design course at The Iron Yard. It's going really well.
+					Mason said something the first day of class that has stuck with me this entire time, and forgive me for bad paraphrasing:
+					Programming is unlike any other..&#8594;</p>
 				</div>
 			</div>
 			<div class="connect-bg">
 				<div class="connect" id="contact">
 					<h1>What I'm Doing</h1>
-					<div class="side-proj1"></div>
-					<div class="side-proj2"></div>
-					<div class="side-proj3"></div>
+					<div class="side-proj1">
+						<blockquote class="instagram-media" data-instgrm-version="4" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAGFBMVEUiIiI9PT0eHh4gIB4hIBkcHBwcHBwcHBydr+JQAAAACHRSTlMABA4YHyQsM5jtaMwAAADfSURBVDjL7ZVBEgMhCAQBAf//42xcNbpAqakcM0ftUmFAAIBE81IqBJdS3lS6zs3bIpB9WED3YYXFPmHRfT8sgyrCP1x8uEUxLMzNWElFOYCV6mHWWwMzdPEKHlhLw7NWJqkHc4uIZphavDzA2JPzUDsBZziNae2S6owH8xPmX8G7zzgKEOPUoYHvGz1TBCxMkd3kwNVbU0gKHkx+iZILf77IofhrY1nYFnB/lQPb79drWOyJVa/DAvg9B/rLB4cC+Nqgdz/TvBbBnr6GBReqn/nRmDgaQEej7WhonozjF+Y2I/fZou/qAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://instagram.com/p/uycL0CBhZc/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_top">A photo posted by @parkerabyrd</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2014-10-30T19:19:27+00:00">Oct 10, 2014 at 12:19pm PDT</time></p></div></blockquote>
+						<script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+					</div>
+					<div class="side-proj2">
+						<blockquote class="instagram-media" data-instgrm-version="4" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAGFBMVEUiIiI9PT0eHh4gIB4hIBkcHBwcHBwcHBydr+JQAAAACHRSTlMABA4YHyQsM5jtaMwAAADfSURBVDjL7ZVBEgMhCAQBAf//42xcNbpAqakcM0ftUmFAAIBE81IqBJdS3lS6zs3bIpB9WED3YYXFPmHRfT8sgyrCP1x8uEUxLMzNWElFOYCV6mHWWwMzdPEKHlhLw7NWJqkHc4uIZphavDzA2JPzUDsBZziNae2S6owH8xPmX8G7zzgKEOPUoYHvGz1TBCxMkd3kwNVbU0gKHkx+iZILf77IofhrY1nYFnB/lQPb79drWOyJVa/DAvg9B/rLB4cC+Nqgdz/TvBbBnr6GBReqn/nRmDgaQEej7WhonozjF+Y2I/fZou/qAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://instagram.com/p/tYz80EBhdh/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_top">A photo posted by @parkerabyrd</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2014-09-25T23:55:29+00:00">Sep 9, 2014 at 4:55pm PDT</time></p></div></blockquote>
+						<script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+					</div>
+					<div class="side-proj3">
+						<blockquote class="instagram-media" data-instgrm-version="4" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAGFBMVEUiIiI9PT0eHh4gIB4hIBkcHBwcHBwcHBydr+JQAAAACHRSTlMABA4YHyQsM5jtaMwAAADfSURBVDjL7ZVBEgMhCAQBAf//42xcNbpAqakcM0ftUmFAAIBE81IqBJdS3lS6zs3bIpB9WED3YYXFPmHRfT8sgyrCP1x8uEUxLMzNWElFOYCV6mHWWwMzdPEKHlhLw7NWJqkHc4uIZphavDzA2JPzUDsBZziNae2S6owH8xPmX8G7zzgKEOPUoYHvGz1TBCxMkd3kwNVbU0gKHkx+iZILf77IofhrY1nYFnB/lQPb79drWOyJVa/DAvg9B/rLB4cC+Nqgdz/TvBbBnr6GBReqn/nRmDgaQEej7WhonozjF+Y2I/fZou/qAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://instagram.com/p/syZvtaBhRN/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_top">A photo posted by @parkerabyrd</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2014-09-11T01:55:21+00:00">Sep 9, 2014 at 6:55pm PDT</time></p></div></blockquote>
+						<script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+					</div>
 					<p>I'd Love to collaborate with you! You can find me on <a href="http://www.github.com/parkerbyrd">Github</a>, or get in touch with me right here</p>
 				</div>
 			</div>
 			<footer>
 				<div class="main-footer">
-					<img src="http://www.fillmurray.com/100/100" alt="Me">
+					<img src="images/logo2.png" alt="Me">
 					<ul>
-						<li><a href="http://www.github.com/parkerbyrd">Github</a></li>
-						<li><a href="http://www.instagram.com/parkerabyrd">Instagram</a></li>
-						<li><a href="http://www.twitter.com/parkerabyrd">Twitter</a></li>
-						<li><a href="parkerbyrd.vsco.co">VSCO</a></li>
-					</ul>
-				</div>
-			</footer>
-		</div>
-		
-	</body>
-</html>
+						<li>
+							<a href="http://instagram.com/parkerabyrd?ref=badge" class="ig-b- ig-b-24"><img src="//badges.instagram.com/static/images/ig-badge-24.png" alt="Instagram" /></a></li>
+
+							<li>
+								<a href="http://www.github.com/parkerbyrd"><img src="images/github.png" alt="Github"></a>
+							</li>
+							<li>
+								<a href="http://www.twitter.com/parkerabyrd"><img src="images/twitter.png" alt=""></a>
+							</li>
+							<li><a href="parkerbyrd.vsco.co"><img src="images/vsco_icon.png" alt="vsco"></a></li>
+						</ul>
+					</div>
+				</footer>
+			</div>
+			<script>$('body').flowtype(
+				minimum   : 500,
+				maximum   : 1200,);
+			</script>
+		</body>
+	</html>
