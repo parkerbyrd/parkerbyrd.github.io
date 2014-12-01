@@ -80,11 +80,16 @@ nav {
     position:relative;
     z-index:2;
     li {
-        font-weight: 200;
-        color: black;
-        display: none;
-        &:hover {
-            border-bottom: 3px solid $primary-color-1;
+            display: none;
+        
+        a {
+            font-weight: 200;
+            color: black;
+        
+            &:hover {
+                border-bottom: 3px solid $primary-color-1;
+            }
+
         }
     }
     button {
@@ -94,15 +99,17 @@ nav {
         color: #FFF;
         font-size: 1em;
         float: right;
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
 
 .show-nav {
-    nav {
-        li {
-            display: block;
-        }
-    }
+    
+         display: block;
+        
+    
 }
 
 .logo {

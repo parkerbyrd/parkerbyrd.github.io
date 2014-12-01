@@ -93,11 +93,12 @@ nav {
   position: relative;
   z-index: 2; }
   nav li {
-    font-weight: 200;
-    color: black;
     display: none; }
-    nav li:hover {
-      border-bottom: 3px solid #80bbd9; }
+    nav li a {
+      font-weight: 200;
+      color: black; }
+      nav li a:hover {
+        border-bottom: 3px solid #80bbd9; }
   nav button {
     padding: 15px 20px 15px 20px;
     border: 1px solid #fff;
@@ -105,8 +106,10 @@ nav {
     color: #FFF;
     font-size: 1em;
     float: right; }
+    nav button:hover {
+      cursor: pointer; }
 
-.show-nav nav li {
+.show-nav {
   display: block; }
 
 .logo {
