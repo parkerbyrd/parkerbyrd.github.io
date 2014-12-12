@@ -12,7 +12,7 @@
         // Create some defaults, extending them with any options that were provided
         //hovereffect: normal,sliceDown,sliceDownLeft,sliceUp,sliceUpLeft
         var settings = $.extend( {
-            'startEffect'   : 'transparent',
+            'startEffect'   : 'grayscale',
             'hoverEffect'   : 'normal',
             'imageOpacity'  : 0.5,
             'animSpeed'     : 300,

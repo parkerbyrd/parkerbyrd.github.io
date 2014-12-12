@@ -96,7 +96,8 @@ nav {
     display: none; }
     nav li a {
       font-weight: 200;
-      color: black; }
+      color: black;
+      text-decoration: none; }
       nav li a:hover {
         border-bottom: 3px solid #80bbd9; }
   nav button {
@@ -175,7 +176,7 @@ nav {
     background: rgba(0, 0, 0, 0.75);
     text-align: center;
     padding: 45px 0 66px 0;
-    opacity: 0;
+    opacity: 1;
     -webkit-transition: opacity .25s ease;
     -moz-transition: opacity .25s ease; }
     .work #overlay span {
@@ -185,7 +186,7 @@ nav {
       top: 10px;
       color: white; }
   .work div:hover #overlay {
-    opacity: 1; }
+    opacity: 0; }
 
 .skills {
   min-height: 600px;
@@ -242,7 +243,8 @@ nav {
 .connect-bg {
   clear: both;
   width: 100%;
-  background-color: #80bbd9; }
+  background-color: #80bbd9;
+  padding-bottom: 50px; }
 
 .connect {
   width: 80%;
@@ -266,28 +268,29 @@ nav {
 
 footer {
   width: 100%;
-  background-color: #095175; }
+  background-color: #095175;
+  min-height: 300px; }
   footer .main-footer {
     width: 80%;
-    min-height: 200px;
     margin: 0 auto;
-    padding-top: 20px; }
+    padding-top: 50px; }
     footer .main-footer img {
+      float: left; }
+    footer .main-footer .fun-section ul {
       float: left;
-      width: 96px;
-      height: 56px; }
-    footer .main-footer ul {
+      padding-left: 100px; }
+    footer .main-footer .icons ul {
       float: right;
       padding-right: 20px;
       padding-top: 20px; }
-      footer .main-footer ul li {
+      footer .main-footer .icons ul li {
         display: inline-block; }
-        footer .main-footer ul li a {
+        footer .main-footer .icons ul li a {
           font-family: "Helvetica Neue";
           color: white; }
-          footer .main-footer ul li a:hover {
+          footer .main-footer .icons ul li a:hover {
             color: #d9d9d9; }
-          footer .main-footer ul li a img {
+          footer .main-footer .icons ul li a img {
             width: 32px;
             height: 32px; }
     footer .main-footer .ig-b- {
@@ -405,11 +408,7 @@ footer {
   .connect .side-proj3 {
     clear: both;
     width: 100%;
-    max-width: 700px; }
-
-  footer .main-footer img {
-    width: 192px;
-    height: 112px; } }
+    max-width: 700px; } }
 @media screen and (min-width: 980px) {
   .logo {
     width: 200px;
