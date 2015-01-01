@@ -54,7 +54,7 @@ p, li {
 /////////////// Header ////////////////////
 
 .bg-head {
-    background-image: url("../images/parker.jpg");
+    background-color: white;
     background-size: cover;
     min-height: 300px;
 }
@@ -75,16 +75,28 @@ p, li {
 }
 
 nav {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
+    background-color: black;
     font-weight: 200;
-    position:relative;
-    z-index:2;
+    text-align: right;
+    height: 70px;
+    padding: 0 10px;
+    img{
+        float: left;
+        width: 60px;
+
+    }
+    // position:relative;
+    // z-index:2;
     li {
             display: none;
-        
+            padding-top: 10px;
         a {
             font-weight: 200;
-            color: black;
+            color: white;
             text-decoration: none;
         
             &:hover {
@@ -173,22 +185,15 @@ nav {
         width: 100%;
         max-height: 200px;
     }
-    .project1 {
-        background-image: url("../images/checklist.png");
-        background-size: cover;
+    img {
+        width: 100%;
     }
-    .project2 {
-        background-image: url("../images/styleguide.png");
-        background-size: cover;
-    }
-    .project3 {
-        background-image: url("../images/dentist.png");
-        background-size: cover;
-    }
-    .project4 {
-        background-image: url("../images/portfolio.png");
-        background-size: cover;
-    }
+    
+    
+    // .project4 {
+    //     background-image: url("../images/unitedshowcase.jpg");
+    //     background-size: cover;
+    // }
     #overlay {
         background: rgba(0, 0, 0, 0.75);
         text-align: center;
@@ -259,11 +264,13 @@ nav {
 
 //////////////// Journal //////////////
 .journal {
-    padding-top: 20px;
+    clear: both;
+    padding-top: 40px;
     width: 80%;
     margin: 0 auto;
     margin-bottom: 50px;
     h1 {
+
         text-align: center;
         margin-bottom: 30px;
     }
@@ -435,12 +442,10 @@ footer {
         min-height: 400px;
     }
     nav {
-        width: 40%;
-        min-width: 250px;
-        float: right;
+        
         li {
             display: inline-block;
-            margin-left: 5%;
+            margin-right: 3%;
         }
         button {
             display: none;
@@ -467,9 +472,7 @@ footer {
             // border: 1px solid $primary-text;
             float: left;
         }
-        img {
-            height: 140px;
-        }
+        
         #overlay {
             width:100%;
 
@@ -547,11 +550,11 @@ footer {
     .alt-welcome {
         display: none;
     }
-    .work {
-        img {
-            height: 200px;
-        }
-    }
+    // .work {
+    //     img {
+    //         height: 200px;
+    //     }
+    // }
     ////////////  Journal   /////////
     .post1 {
         width: 30%;

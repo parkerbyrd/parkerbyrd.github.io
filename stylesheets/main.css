@@ -73,7 +73,7 @@ p, li {
   line-height: 1.7; }
 
 .bg-head {
-  background-image: url("../images/parker.jpg");
+  background-color: white;
   background-size: cover;
   min-height: 300px; }
 
@@ -88,15 +88,24 @@ p, li {
     color: white; }
 
 nav {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
+  background-color: black;
   font-weight: 200;
-  position: relative;
-  z-index: 2; }
+  text-align: right;
+  height: 70px;
+  padding: 0 10px; }
+  nav img {
+    float: left;
+    width: 60px; }
   nav li {
-    display: none; }
+    display: none;
+    padding-top: 10px; }
     nav li a {
       font-weight: 200;
-      color: black;
+      color: white;
       text-decoration: none; }
       nav li a:hover {
         border-bottom: 3px solid #80bbd9; }
@@ -160,18 +169,8 @@ nav {
   .work a {
     width: 100%;
     max-height: 200px; }
-  .work .project1 {
-    background-image: url("../images/checklist.png");
-    background-size: cover; }
-  .work .project2 {
-    background-image: url("../images/styleguide.png");
-    background-size: cover; }
-  .work .project3 {
-    background-image: url("../images/dentist.png");
-    background-size: cover; }
-  .work .project4 {
-    background-image: url("../images/portfolio.png");
-    background-size: cover; }
+  .work img {
+    width: 100%; }
   .work #overlay {
     background: rgba(0, 0, 0, 0.75);
     text-align: center;
@@ -228,7 +227,8 @@ nav {
   font-size: 50px; }
 
 .journal {
-  padding-top: 20px;
+  clear: both;
+  padding-top: 40px;
   width: 80%;
   margin: 0 auto;
   margin-bottom: 50px; }
@@ -350,15 +350,11 @@ footer {
   .bg-head {
     min-height: 400px; }
 
-  nav {
-    width: 40%;
-    min-width: 250px;
-    float: right; }
-    nav li {
-      display: inline-block;
-      margin-left: 5%; }
-    nav button {
-      display: none; }
+  nav li {
+    display: inline-block;
+    margin-right: 3%; }
+  nav button {
+    display: none; }
 
   .myname span {
     color: black; }
@@ -376,8 +372,6 @@ footer {
     width: 50%;
     min-height: 100px;
     float: left; }
-  .work img {
-    height: 140px; }
   .work #overlay {
     width: 100%; }
 
@@ -428,9 +422,6 @@ footer {
 
   .alt-welcome {
     display: none; }
-
-  .work img {
-    height: 200px; }
 
   .post1 {
     width: 30%;
