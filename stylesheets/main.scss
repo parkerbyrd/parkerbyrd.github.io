@@ -54,7 +54,7 @@ p, li {
 /////////////// Header ////////////////////
 
 .bg-head {
-    background-color: white;
+    background-image: url("../images/parker.jpg");
     background-size: cover;
     min-height: 300px;
 }
@@ -75,34 +75,19 @@ p, li {
 }
 
 nav {
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    background-color: black;
     font-weight: 200;
-    text-align: right;
-    height: 70px;
-    padding: 0 10px;
-    img{
-        float: left;
-        width: 60px;
-
-    }
-    // position:relative;
-    // z-index:2;
+    position: relative;
+    z-index: 2;
     li {
-            display: none;
-            padding-top: 10px;
+        display: none;
         a {
             font-weight: 200;
-            color: white;
+            color: black;
             text-decoration: none;
-        
             &:hover {
                 border-bottom: 3px solid $primary-color-1;
             }
-
         }
     }
     button {
@@ -119,10 +104,7 @@ nav {
 }
 
 .show-nav {
-    
-         display: block;
-        
-    
+    display: block;
 }
 
 .logo {
@@ -185,15 +167,22 @@ nav {
         width: 100%;
         max-height: 200px;
     }
-    img {
-        width: 100%;
+    .project1 {
+        background-image: url("../images/checklist.png");
+        background-size: cover;
     }
-    
-    
-    // .project4 {
-    //     background-image: url("../images/unitedshowcase.jpg");
-    //     background-size: cover;
-    // }
+    .project2 {
+        background-image: url("../images/styleguide.png");
+        background-size: cover;
+    }
+    .project3 {
+        background-image: url("../images/dentist.png");
+        background-size: cover;
+    }
+    .project4 {
+        background-image: url("../images/portfolio.png");
+        background-size: cover;
+    }
     #overlay {
         background: rgba(0, 0, 0, 0.75);
         text-align: center;
@@ -201,18 +190,17 @@ nav {
         opacity: 1;
         -webkit-transition: opacity .25s ease;
         -moz-transition: opacity .25s ease;
-        span{
-        font-size: 2em;
-        font-family: $header-font;
-        position: relative;
-        top: 10px;
-        color: white;
-    }
+        span {
+            font-size: 2em;
+            font-family: $header-font;
+            position: relative;
+            top: 10px;
+            color: white;
+        }
     }
     div:hover #overlay {
         opacity: 0;
     }
-
 }
 
 //////////////  Skills ///////////////
@@ -264,13 +252,11 @@ nav {
 
 //////////////// Journal //////////////
 .journal {
-    clear: both;
-    padding-top: 40px;
+    padding-top: 20px;
     width: 80%;
     margin: 0 auto;
     margin-bottom: 50px;
     h1 {
-
         text-align: center;
         margin-bottom: 30px;
     }
@@ -321,48 +307,42 @@ footer {
     min-height: 300px;
     .main-footer {
         width: 80%;
-        
         margin: 0 auto;
         padding-top: 50px;
         img {
             float: left;
             // width: 96px;
             // height: 56px;
+       
         }
         .fun-section {
             ul {
                 float: left;
                 padding-left: 100px;
-                a {
-                    
-                }
-                    
-                
-
+                a {}
             }
         }
         .icons {
-        ul {
-            float: right;
-            padding-right: 20px;
-            padding-top: 20px;
-            li {
-                display: inline-block;
-                a {
-                    font-family: $header-font;
-                    color: white;
-                    &:hover {
-                        color: darken(white, 15%);
-                    }
-                    img {
-                        width: 32px;
-                        height: 32px;
+            ul {
+                float: right;
+                padding-right: 20px;
+                padding-top: 20px;
+                li {
+                    display: inline-block;
+                    a {
+                        font-family: $header-font;
+                        color: white;
+                        &:hover {
+                            color: darken(white, 15%);
+                        }
+                        img {
+                            width: 32px;
+                            height: 32px;
+                        }
                     }
                 }
             }
         }
-    }
-
         .ig-b- {
             display: inline-block;
         }
@@ -394,18 +374,17 @@ footer {
 .info-left {
     width: 50%;
     height: 800px;
-    background-color:$primary-color-1;
+    background-color: $primary-color-1;
     float: left;
     padding: 30px;
     h1 {
         line-height: 1.5;
     }
-    p{
+    p {
         line-height: 2;
         padding: 10px;
         font-family: $header-font;
         font-weight: 200;
-
     }
     a {
         text-decoration: none;
@@ -414,16 +393,16 @@ footer {
     }
     ul {
         padding: 10px;
-    li {
-        font-family: $header-font;
-        font-weight: 200;
-
+        li {
+            font-family: $header-font;
+            font-weight: 200;
+        }
     }
 }
-}
+
 .img-right {
     width: 50%;
-    height:800px;
+    height: 800px;
     background-color: $primary-color-2;
     float: right;
     img {
@@ -432,20 +411,23 @@ footer {
         margin-bottom: 20px;
         border: 3px solid black;
         &:hover {
-            transform: scale(1.2)
+            transform: scale(1.2);
         }
     }
 }
+
 //////////////// Media Queries ///////////
 @media screen and (min-width: 480px) {
     .bg-head {
         min-height: 400px;
     }
     nav {
-        
+        width: 40%;
+        min-width: 250px;
+        float: right;
         li {
             display: inline-block;
-            margin-right: 3%;
+            margin-left: 5%;
         }
         button {
             display: none;
@@ -472,10 +454,11 @@ footer {
             // border: 1px solid $primary-text;
             float: left;
         }
-        
+        img {
+            height: 140px;
+        }
         #overlay {
-            width:100%;
-
+            width: 100%;
         }
     }
     .skills {
@@ -550,11 +533,11 @@ footer {
     .alt-welcome {
         display: none;
     }
-    // .work {
-    //     img {
-    //         height: 200px;
-    //     }
-    // }
+    .work {
+        img {
+            height: 200px;
+        }
+    }
     ////////////  Journal   /////////
     .post1 {
         width: 30%;
