@@ -73,7 +73,7 @@ p, li {
   line-height: 1.7; }
 
 .bg-head {
-  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.75)), url(../images/parker.jpg) fixed center center;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.75)), url(../images/parker.jpg) fixed center center;
   background-size: cover;
   min-height: 300px; }
 
@@ -141,7 +141,8 @@ p, li {
   margin: 0 auto;
   padding-top: 30px;
   padding-bottom: 30px;
-  color: white; }
+  color: white;
+  text-shadow: 1px 1px 1px #000; }
   .welcome a {
     color: #80bbd9;
     text-decoration: dotted; }
@@ -152,7 +153,8 @@ p, li {
   color: white;
   width: 80%;
   margin: 0 auto;
-  padding-top: 80px; }
+  padding-top: 80px;
+  text-shadow: 1px 1px 1px #000; }
   .about-me p a {
     color: white;
     text-decoration: none;
@@ -194,7 +196,7 @@ p, li {
     background-image: url("../images/webdesignlogo.png");
     background-size: cover; }
   .work #overlay {
-    background: rgba(0, 0, 0, 0.85);
+    background: rgba(0, 0, 0, 0.9);
     text-align: center;
     padding: 45px 0 66px 0;
     opacity: 1;
@@ -251,14 +253,14 @@ p, li {
 
 .about-me {
   height: 100%;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.6) 100%), url(../images/parker1.jpg) fixed center center; }
+  background: linear-gradient(to right, transparent 0%, transparent 50%, rgba(0, 0, 0, 0.6) 100%), url(../images/parker1.jpg) fixed center center; }
 
 .journal {
-  padding-top: 20px;
-  width: 80%;
+  padding: 20px 10%;
+  width: 100%;
   margin: 0 auto;
-  margin-bottom: 50px;
-  min-height: 100%; }
+  min-height: 100%;
+  background-color: #80bbd9; }
   .journal h1 {
     text-align: center;
     margin-bottom: 30px; }
