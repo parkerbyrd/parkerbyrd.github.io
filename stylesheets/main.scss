@@ -141,13 +141,11 @@ p, li {
 }
 
 .welcome {
-    width: 45%;
-    // margin-left: 50px;
-    // padding-top: 100px;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
     color: white;
-    position: absolute;
-    bottom: 50px;
-    left: 50px;
     a {
         color: $primary-color-1;
         text-decoration: dotted;

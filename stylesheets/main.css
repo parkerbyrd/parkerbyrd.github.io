@@ -137,11 +137,11 @@ p, li {
   height: 50px; }
 
 .welcome {
-  width: 45%;
-  color: white;
-  position: absolute;
-  bottom: 50px;
-  left: 50px; }
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: white; }
   .welcome a {
     color: #80bbd9;
     text-decoration: dotted; }
@@ -406,6 +406,12 @@ footer {
     background-color: #787878;
     width: 100px;
     height: 100px; }
+
+  .welcome {
+    width: 45%;
+    position: absolute;
+    bottom: 50px;
+    left: 50px; }
 
   .work div {
     width: 50%;
