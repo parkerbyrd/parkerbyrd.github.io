@@ -386,6 +386,30 @@ footer {
     .img-right img:hover {
       transform: scale(1.2); }
 
+#resume {
+  margin-top: 26px; }
+  #resume a {
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #095175;
+    -webkit-box-shadow: -1px 0px 6px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: -1px 0px 6px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: -1px 0px 6px 0px rgba(50, 50, 50, 0.75);
+    border: none;
+    border-bottom: 2px solid #020f16;
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px; }
+    #resume a:active {
+      border-bottom: none; }
+    #resume a:focus {
+      outline: none; }
+
 @media screen and (min-width: 480px) {
   .bg-head {
     height: 100%;

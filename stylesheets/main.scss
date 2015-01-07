@@ -12,6 +12,26 @@ $main-font: "Garamond";
 $design-font: "elina-web-decor";
 $code-font: "jaf-mashine-rounded";
 
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+
+
+@mixin box-shadow {
+    -webkit-box-shadow: -1px 0px 6px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    -1px 0px 6px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         -1px 0px 6px 0px rgba(50, 50, 50, 0.75);
+}
+
+
+
+
+
 html {
     box-sizing: border-box;
 }
@@ -482,7 +502,29 @@ footer {
         }
     }
 }
-
+#resume {
+    margin-top: 26px;
+    a {
+        margin: 0 auto;
+        text-align: center;
+        padding: 10px 20px;
+        background-color: $primary-color-2;
+        @include box-shadow;
+        border: none;
+        border-bottom: 2px solid darken($primary-color-2, 20%);
+        font-size: 1em;
+        color: white;
+        text-decoration: none;
+        
+        @include border-radius(5px);
+        &:active {
+            border-bottom: none;
+        }
+        &:focus {
+            outline:none;
+        }
+}
+}
 //////////////// Media Queries ///////////
 
 @import "mediaquerymed";
