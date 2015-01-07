@@ -1,0 +1,68 @@
+@media screen and (min-width: 980px) {
+    //// header /////
+    .logo {
+        width: 200px;
+        height: 100px;
+    }
+    .bg-head {
+        min-height: 500px;
+    }
+    .work {
+        div {
+            min-height: 200px;
+        }
+    }
+    .main-footer {
+        max-width: 70%;
+    }
+    
+    .alt-welcome {
+        display: none;
+    }
+    .work {
+        img {
+            height: 200px;
+        }
+    }
+    ////////////  Journal   /////////
+    .post1 {
+        width: 30%;
+        float: left;
+        margin-right: 3.3333%;
+    }
+    .post2 {
+        width: 30%;
+        float: left;
+        margin-right: 3.3333%;
+    }
+    .post3 {
+        display: block;
+        width: 30%;
+        float: left;
+        margin-right: 3.3333%;
+    }
+    ///// What I'm Doing /////
+    .connect {
+        .side-proj1 {
+            width: 30%;
+            float: left;
+            margin-right: 5%;
+            max-width: 500px;
+        }
+        .side-proj2 {
+            width: 30%;
+            float: left;
+            margin-right: 5%;
+            max-width: 500px;
+        }
+        .side-proj3 {
+            clear: none;
+            width: 30%;
+            float: left;
+            margin-right: 0;
+            max-width: 500px;
+        }
+    }
+}
+
+//mediatag

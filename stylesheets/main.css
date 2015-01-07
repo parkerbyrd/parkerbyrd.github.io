@@ -73,7 +73,7 @@ p, li {
   line-height: 1.7; }
 
 .bg-head {
-  background-image: url("../images/parker.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.75)), url(../images/parker.jpg) fixed center center;
   background-size: cover;
   min-height: 300px; }
 
@@ -87,31 +87,47 @@ p, li {
   .myname span {
     color: white; }
 
-nav {
+.main-nav {
   width: 100%;
-  font-weight: 200;
-  position: relative;
-  z-index: 2; }
-  nav li {
-    display: none; }
-    nav li a {
+  min-height: 54px;
+  background-color: black; }
+  .main-nav img {
+    float: left;
+    width: 50px;
+    margin: 5px; }
+  .main-nav ul {
+    text-align: right;
+    padding: 16px; }
+  .main-nav li {
+    display: inline-block; }
+    .main-nav li a {
+      margin-left: 14px;
+      display: inline-block;
+      font-size: 16px;
       font-weight: 200;
-      color: black;
+      color: white;
       text-decoration: none; }
-      nav li a:hover {
-        border-bottom: 3px solid #80bbd9; }
-  nav button {
-    padding: 15px 20px 15px 20px;
-    border: 1px solid #fff;
-    outline: none;
-    color: #FFF;
-    font-size: 1em;
-    float: right; }
-    nav button:hover {
-      cursor: pointer; }
+      .main-nav li a:hover {
+        color: #80bbd9; }
+
+.nav-toggle {
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/hamburger.png");
+  background-size: cover;
+  float: right;
+  margin-right: 5px;
+  margin-top: 5px; }
 
 .show-nav {
   display: block; }
+
+.down-arrow {
+  font-size: 200px;
+  color: white;
+  text-align: center;
+  position: relative;
+  line-height: 1; }
 
 .logo {
   margin-left: 20px;
@@ -121,21 +137,26 @@ nav {
   height: 50px; }
 
 .welcome {
-  clear: both;
-  width: 50%;
-  min-height: 100px;
-  min-width: 100px;
-  padding: 20px;
-  background-color: white;
+  width: 45%;
+  color: white;
+  position: absolute;
+  bottom: 50px;
+  left: 50px; }
+  .welcome a {
+    color: #80bbd9;
+    text-decoration: dotted; }
+    .welcome a:hover {
+      color: #095175; }
+
+.about-me p {
+  color: white;
+  width: 80%;
   margin: 0 auto;
-  margin-top: 60px;
-  -webkit-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.54);
-  -moz-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.54);
-  box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.54);
-  display: none; }
-  .welcome p {
-    font-size: 1em;
-    font-family: "Helvetica Neue"; }
+  padding-top: 80px; }
+  .about-me p a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px dotted #80bbd9; }
 
 .alt-welcome {
   width: 100%;
@@ -161,7 +182,7 @@ nav {
     width: 100%;
     max-height: 200px; }
   .work .project1 {
-    background-image: url("../images/checklist.png");
+    background-image: url("../images/unitedshowcase.jpg");
     background-size: cover; }
   .work .project2 {
     background-image: url("../images/styleguide.png");
@@ -170,10 +191,10 @@ nav {
     background-image: url("../images/dentist.png");
     background-size: cover; }
   .work .project4 {
-    background-image: url("../images/portfolio.png");
+    background-image: url("../images/webdesignlogo.png");
     background-size: cover; }
   .work #overlay {
-    background: rgba(0, 0, 0, 0.75);
+    background: rgba(0, 0, 0, 0.85);
     text-align: center;
     padding: 45px 0 66px 0;
     opacity: 1;
@@ -181,6 +202,7 @@ nav {
     -moz-transition: opacity .25s ease; }
     .work #overlay span {
       font-size: 2em;
+      font-weight: 100;
       font-family: "Helvetica Neue";
       position: relative;
       top: 10px;
@@ -227,11 +249,16 @@ nav {
   padding-top: 55px;
   font-size: 50px; }
 
+.about-me {
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.6) 100%), url(../images/justin.jpg) fixed center center; }
+
 .journal {
   padding-top: 20px;
   width: 80%;
   margin: 0 auto;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  min-height: 100%; }
   .journal h1 {
     text-align: center;
     margin-bottom: 30px; }
@@ -264,7 +291,13 @@ nav {
   .connect p {
     clear: both;
     font-weight: 200;
+    font-size: 1em;
     text-align: center; }
+    .connect p a {
+      color: #095175;
+      text-decoration: none; }
+      .connect p a:hover {
+        text-decoration: underline; }
 
 footer {
   width: 100%;
@@ -279,6 +312,15 @@ footer {
     footer .main-footer .fun-section ul {
       float: left;
       padding-left: 100px; }
+      footer .main-footer .fun-section ul li {
+        font-size: 16px;
+        font-weight: 300;
+        color: white; }
+        footer .main-footer .fun-section ul li a {
+          color: #80bbd9;
+          text-decoration: none; }
+          footer .main-footer .fun-section ul li a:hover {
+            text-decoration: underline; }
     footer .main-footer .icons ul {
       float: right;
       padding-right: 20px;
@@ -348,17 +390,10 @@ footer {
 
 @media screen and (min-width: 480px) {
   .bg-head {
-    min-height: 400px; }
+    height: 100%; }
 
-  nav {
-    width: 40%;
-    min-width: 250px;
-    float: right; }
-    nav li {
-      display: inline-block;
-      margin-left: 5%; }
-    nav button {
-      display: none; }
+  .main-nav li {
+    display: inline-block; }
 
   .myname span {
     color: black; }
@@ -381,12 +416,14 @@ footer {
   .work #overlay {
     width: 100%; }
 
-  .skills h1 {
-    margin-bottom: 40px; }
-  .skills .skillset-left, .skills .skillset-right {
-    width: 50%;
-    float: left;
-    margin: 0 auto; }
+  .skills {
+    height: 100%; }
+    .skills h1 {
+      margin-bottom: 40px; }
+    .skills .skillset-left, .skills .skillset-right {
+      width: 50%;
+      float: left;
+      margin: 0 auto; }
 
   .post1 {
     width: 45%;
@@ -408,7 +445,18 @@ footer {
   .connect .side-proj3 {
     clear: both;
     width: 100%;
-    max-width: 700px; } }
+    max-width: 700px; }
+
+  .about-me p {
+    float: right;
+    margin-top: 200px;
+    color: white;
+    width: 33%;
+    margin-right: 40px; }
+    .about-me p a {
+      color: white;
+      text-decoration: none;
+      border-bottom: 2px dotted #80bbd9; } }
 @media screen and (min-width: 980px) {
   .logo {
     width: 200px;
@@ -422,9 +470,6 @@ footer {
 
   .main-footer {
     max-width: 70%; }
-
-  .welcome {
-    display: block; }
 
   .alt-welcome {
     display: none; }

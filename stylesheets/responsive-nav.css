@@ -1,4 +1,4 @@
-/*! responsive-nav.js 1.0.32 by @viljamis */
+/*! responsive-nav.js @@version by @viljamis */
 
 .nav-collapse ul {
   margin: 0;
@@ -49,5 +49,11 @@
   }
   .nav-toggle {
     display: none;
+  }
+  .nav-collapse {
+    li {
+      width: 10%;
+      display: inline-block;
+    }
   }
 }

@@ -1,5 +1,7 @@
 @import "reset";
 
+
+
 $bg-main: #ffffff;
 $primary-text: #000000;
 $primary-color-1: #80bbd9;
@@ -54,8 +56,11 @@ p, li {
 /////////////// Header ////////////////////
 
 .bg-head {
-    background-image: url("../images/parker.jpg");
+
+    background:linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.75)), url(../images/parker.jpg) fixed center center;
     background-size: cover;
+
+    
     min-height: 300px;
 }
 
@@ -74,38 +79,58 @@ p, li {
     // left: 300px;
 }
 
-nav {
+.main-nav {
+    
     width: 100%;
-    font-weight: 200;
-    position: relative;
-    z-index: 2;
+    min-height: 54px;
+    background-color: black;
+    img {
+        float: left;
+        width: 50px;
+        margin: 5px;
+    }
+    ul {
+        text-align: right;
+        padding: 16px;
+    }
     li {
-        display: none;
+        display: inline-block;
         a {
+            margin-left: 14px;
+            display: inline-block;
+            font-size: 16px;
             font-weight: 200;
-            color: black;
+            color: white;
             text-decoration: none;
             &:hover {
-                border-bottom: 3px solid $primary-color-1;
+                color: $primary-color-1;
+
             }
         }
     }
-    button {
-        padding: 15px 20px 15px 20px;
-        border: 1px solid #fff;
-        outline: none;
-        color: #FFF;
-        font-size: 1em;
-        float: right;
-        &:hover {
-            cursor: pointer;
-        }
-    }
+    
 }
-
+.nav-toggle{
+    width: 40px;
+    height: 40px;
+    background-image: url('../images/hamburger.png');
+    background-size: cover;
+    float:right;
+    margin-right: 5px;
+    margin-top: 5px;
+    }
 .show-nav {
     display: block;
 }
+
+.down-arrow {
+    font-size: 200px;
+    color: white;
+    text-align: center;
+    position: relative;
+    line-height: 1;
+}
+
 
 .logo {
     margin-left: 20px;
@@ -116,25 +141,38 @@ nav {
 }
 
 .welcome {
-    // position: relative;
-    // top: 200px;
-    clear: both;
-    width: 50%;
-    min-height: 100px;
-    min-width: 100px;
-    padding: 20px;
-    background-color: white;
-    margin: 0 auto;
-    margin-top: 60px;
-    -webkit-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.54);
-    -moz-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.54);
-    box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.54);
-    display: none;
-    p {
-        font-size: 1em;
-        font-family: $header-font;
+    width: 45%;
+    // margin-left: 50px;
+    // padding-top: 100px;
+    color: white;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    a {
+        color: $primary-color-1;
+        text-decoration: dotted;
+        &:hover {
+            color: $primary-color-2;
+        }
     }
+
 }
+
+    .about-me {
+        p {
+        
+        
+        color: white;
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 80px;
+        a {
+            color: white;
+            text-decoration: none;
+            border-bottom: 2px dotted $primary-color-1;
+        }
+        }   
+    }
 
 .alt-welcome {
     width: 100%;
@@ -168,7 +206,7 @@ nav {
         max-height: 200px;
     }
     .project1 {
-        background-image: url("../images/checklist.png");
+        background-image: url("../images/unitedshowcase.jpg");
         background-size: cover;
     }
     .project2 {
@@ -180,11 +218,11 @@ nav {
         background-size: cover;
     }
     .project4 {
-        background-image: url("../images/portfolio.png");
+        background-image: url("../images/webdesignlogo.png");
         background-size: cover;
     }
     #overlay {
-        background: rgba(0, 0, 0, 0.75);
+        background: rgba(0, 0, 0, 0.85);
         text-align: center;
         padding: 45px 0 66px 0;
         opacity: 1;
@@ -192,6 +230,7 @@ nav {
         -moz-transition: opacity .25s ease;
         span {
             font-size: 2em;
+            font-weight: 100;
             font-family: $header-font;
             position: relative;
             top: 10px;
@@ -249,6 +288,20 @@ nav {
     padding-top: 55px;
     font-size: 50px;
 }
+//////////////// About Me /////////////
+
+.about-me {
+    height: 100%;
+    background:linear-gradient(to right, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0)50%,rgba(0, 0, 0, 0.6)100%), url(../images/justin.jpg) fixed center center;
+
+}
+
+
+
+
+
+
+
 
 //////////////// Journal //////////////
 .journal {
@@ -256,6 +309,7 @@ nav {
     width: 80%;
     margin: 0 auto;
     margin-bottom: 50px;
+    min-height: 100%;
     h1 {
         text-align: center;
         margin-bottom: 30px;
@@ -296,7 +350,15 @@ nav {
     p {
         clear: both;
         font-weight: 200;
+        font-size: 1em;
         text-align: center;
+        a{
+            color: $primary-color-2;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 }
 
@@ -319,7 +381,19 @@ footer {
             ul {
                 float: left;
                 padding-left: 100px;
-                a {}
+                li {
+                    font-size: 16px;
+                    font-weight: 300;
+                    color: white;
+
+                a {
+                    color: $primary-color-1;
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
             }
         }
         .icons {
@@ -417,166 +491,8 @@ footer {
 }
 
 //////////////// Media Queries ///////////
-@media screen and (min-width: 480px) {
-    .bg-head {
-        min-height: 400px;
-    }
-    nav {
-        width: 40%;
-        min-width: 250px;
-        float: right;
-        li {
-            display: inline-block;
-            margin-left: 5%;
-        }
-        button {
-            display: none;
-        }
-    }
-    .myname {
-        span {
-            color: black;
-        }
-    }
-    .logo {
-        position: relative;
-        top: 30px;
-        margin-left: 30px;
-        float: left;
-        background-color: #787878;
-        width: 100px;
-        height: 100px;
-    }
-    .work {
-        div {
-            width: 50%;
-            min-height: 100px;
-            // border: 1px solid $primary-text;
-            float: left;
-        }
-        img {
-            height: 140px;
-        }
-        #overlay {
-            width: 100%;
-        }
-    }
-    .skills {
-        h1 {
-            margin-bottom: 40px;
-        }
-        .skillset-left, .skillset-right {
-            width: 50%;
-            float: left;
-            margin: 0 auto;
-        }
-    }
-    ////// Journal //////
-    .post1 {
-        width: 45%;
-        float: left;
-    }
-    .post2 {
-        width: 45%;
-        float: right;
-    }
-    .post3 {
-        display: none;
-    }
-    ///////// What I'm Doing ////////
-    .connect {
-        .side-proj1 {
-            width: 40%;
-            float: left;
-        }
-        .side-proj2 {
-            width: 40%;
-            float: right;
-        }
-        .side-proj3 {
-            clear: both;
-            width: 100%;
-            max-width: 700px;
-        }
-    }
-    // footer {
-    //     .main-footer {
-    //         img {
-    //             width: 192px;
-    //             height: 192px;
-    //         }
-    //     }
-    // }
-}
 
-// media tag
-@media screen and (min-width: 980px) {
-    //// header /////
-    .logo {
-        width: 200px;
-        height: 100px;
-    }
-    .bg-head {
-        min-height: 500px;
-    }
-    .work {
-        div {
-            min-height: 200px;
-        }
-    }
-    .main-footer {
-        max-width: 70%;
-    }
-    .welcome {
-        display: block;
-    }
-    .alt-welcome {
-        display: none;
-    }
-    .work {
-        img {
-            height: 200px;
-        }
-    }
-    ////////////  Journal   /////////
-    .post1 {
-        width: 30%;
-        float: left;
-        margin-right: 3.3333%;
-    }
-    .post2 {
-        width: 30%;
-        float: left;
-        margin-right: 3.3333%;
-    }
-    .post3 {
-        display: block;
-        width: 30%;
-        float: left;
-        margin-right: 3.3333%;
-    }
-    ///// What I'm Doing /////
-    .connect {
-        .side-proj1 {
-            width: 30%;
-            float: left;
-            margin-right: 5%;
-            max-width: 500px;
-        }
-        .side-proj2 {
-            width: 30%;
-            float: left;
-            margin-right: 5%;
-            max-width: 500px;
-        }
-        .side-proj3 {
-            clear: none;
-            width: 30%;
-            float: left;
-            margin-right: 0;
-            max-width: 500px;
-        }
-    }
-}
+@import "mediaquerymed";
+@import "mediaquerylarge";
 
-//mediatag
+
