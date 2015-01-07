@@ -75,6 +75,7 @@ p, li {
 .bg-head {
   background: linear-gradient(transparent, rgba(0, 0, 0, 0.75)), url(../images/parker.jpg) fixed center center;
   background-size: cover;
+  width: 100%;
   min-height: 300px; }
 
 .myname {
@@ -136,17 +137,17 @@ p, li {
   width: 50px;
   height: 50px; }
 
-.welcome {
+.welcome1 {
   width: 90%;
   margin: 0 auto;
   padding-top: 30px;
   padding-bottom: 30px;
   color: white;
   text-shadow: 1px 1px 1px #000; }
-  .welcome a {
+  .welcome1 a {
     color: #80bbd9;
     text-decoration: dotted; }
-    .welcome a:hover {
+    .welcome1 a:hover {
       color: #095175; }
 
 .about-me p {
@@ -253,7 +254,8 @@ p, li {
 
 .about-me {
   height: 100%;
-  background: linear-gradient(to right, transparent 0%, transparent 50%, rgba(0, 0, 0, 0.6) 100%), url(../images/parker1.jpg) fixed center center; }
+  background: linear-gradient(to right, transparent 0%, transparent 50%, rgba(0, 0, 0, 0.6) 100%), url(../images/parker1.jpg) fixed center center no-repeat;
+  background-size: cover; }
 
 .journal {
   padding: 20px 10%;
@@ -304,25 +306,28 @@ p, li {
 footer {
   width: 100%;
   background-color: #095175;
-  min-height: 300px; }
+  min-height: 300px;
+  overflow: auto; }
   footer .main-footer {
     width: 80%;
     margin: 0 auto;
     padding-top: 50px; }
     footer .main-footer img {
       float: left; }
-    footer .main-footer .fun-section ul {
-      float: left;
-      padding-left: 100px; }
-      footer .main-footer .fun-section ul li {
-        font-size: 16px;
-        font-weight: 300;
-        color: white; }
-        footer .main-footer .fun-section ul li a {
-          color: #80bbd9;
-          text-decoration: none; }
-          footer .main-footer .fun-section ul li a:hover {
-            text-decoration: underline; }
+    footer .main-footer .fun-section {
+      display: none; }
+      footer .main-footer .fun-section ul {
+        float: left;
+        padding-left: 100px; }
+        footer .main-footer .fun-section ul li {
+          font-size: 16px;
+          font-weight: 300;
+          color: white; }
+          footer .main-footer .fun-section ul li a {
+            color: #80bbd9;
+            text-decoration: none; }
+            footer .main-footer .fun-section ul li a:hover {
+              text-decoration: underline; }
     footer .main-footer .icons ul {
       float: right;
       padding-right: 20px;
@@ -337,18 +342,9 @@ footer {
           footer .main-footer .icons ul li a img {
             width: 32px;
             height: 32px; }
-    footer .main-footer .ig-b- {
-      display: inline-block; }
-    footer .main-footer .ig-b- img {
-      visibility: hidden; }
-    footer .main-footer .ig-b-:hover {
-      background-position: 0 -60px; }
-    footer .main-footer .ig-b-:active {
-      background-position: 0 -120px; }
-    footer .main-footer .ig-b-24 {
-      width: 32px;
-      height: 32px;
-      background: url(//badges.instagram.com/static/images/ig-badge-sprite-24.png) no-repeat 0 0; }
+    footer .main-footer #github {
+      width: 29px;
+      height: 29px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
       footer .main-footer .ig-b-24 {
         background-image: url(//badges.instagram.com/static/images/ig-badge-sprite-24@2x.png);
@@ -392,7 +388,8 @@ footer {
 
 @media screen and (min-width: 480px) {
   .bg-head {
-    height: 100%; }
+    height: 100%;
+    position: relative; }
 
   .main-nav li {
     display: inline-block; }
@@ -409,11 +406,13 @@ footer {
     width: 100px;
     height: 100px; }
 
-  .welcome {
-    width: 45%;
+  .welcome1 {
+    width: 100%;
     position: absolute;
     bottom: 50px;
     left: 50px; }
+    .welcome1 p {
+      width: 45%; }
 
   .work div {
     width: 50%;
@@ -516,6 +515,9 @@ footer {
     width: 30%;
     float: left;
     margin-right: 0;
-    max-width: 500px; } }
+    max-width: 500px; }
+
+  footer .main-footer .fun-section {
+    display: block; } }
 
 /*# sourceMappingURL=main.css.map */

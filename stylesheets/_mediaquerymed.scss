@@ -1,6 +1,7 @@
 @media screen and (min-width: 480px) {
     .bg-head {
         height: 100%;
+        position: relative;
     }
     .main-nav {
         
@@ -23,14 +24,19 @@
         width: 100px;
         height: 100px;
     }
-    .welcome {
+    .welcome1 {
+        width: 100%;
+        position: absolute;
+        bottom: 50px;
+        left: 50px;
+        p {
         width: 45%;
+    }
+
     // margin-left: 50px;
     // padding-top: 100px;
     
-    position: absolute;
-    bottom: 50px;
-    left: 50px;
+    
     }
     .work {
         div {
@@ -99,6 +105,7 @@
         }
         }   
     }
+    
     // footer {
     //     .main-footer {
     //         img {

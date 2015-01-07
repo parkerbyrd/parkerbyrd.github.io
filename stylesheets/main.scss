@@ -59,7 +59,7 @@ p, li {
 
     background:linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75)), url(../images/parker.jpg) fixed center center;
     background-size: cover;
-
+    width: 100%;
     
     min-height: 300px;
 }
@@ -140,7 +140,7 @@ p, li {
     height: 50px;
 }
 
-.welcome {
+.welcome1 {
     width: 90%;
     margin: 0 auto;
     padding-top: 30px;
@@ -292,8 +292,8 @@ p, li {
 
 .about-me {
     height: 100%;
-    background:linear-gradient(to right, rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0)50%,rgba(0, 0, 0, 0.6)100%), url(../images/parker1.jpg) fixed center center;
-
+    background:linear-gradient(to right, rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0)50%,rgba(0, 0, 0, 0.6)100%), url(../images/parker1.jpg) fixed center center no-repeat;
+    background-size: cover;
 }
 
 
@@ -368,6 +368,7 @@ footer {
     width: 100%;
     background-color: $primary-color-2;
     min-height: 300px;
+    overflow: auto;
     .main-footer {
         width: 80%;
         margin: 0 auto;
@@ -379,6 +380,7 @@ footer {
        
         }
         .fun-section {
+            display: none;
             ul {
                 float: left;
                 padding-left: 100px;
@@ -418,23 +420,13 @@ footer {
                 }
             }
         }
-        .ig-b- {
-            display: inline-block;
+        
+        #github {
+            width: 29px;
+            height: 29px;
         }
-        .ig-b- img {
-            visibility: hidden;
-        }
-        .ig-b-:hover {
-            background-position: 0 -60px;
-        }
-        .ig-b-:active {
-            background-position: 0 -120px;
-        }
-        .ig-b-24 {
-            width: 32px;
-            height: 32px;
-            background: url(//badges.instagram.com/static/images/ig-badge-sprite-24.png) no-repeat 0 0;
-        }
+
+
         @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
             .ig-b-24 {
                 background-image: url(//badges.instagram.com/static/images/ig-badge-sprite-24@2x.png);
