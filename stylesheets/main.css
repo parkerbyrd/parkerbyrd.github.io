@@ -73,7 +73,7 @@ p, li {
   line-height: 1.7; }
 
 .bg-head {
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.75)), url(../images/parker.jpg) fixed center center;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.75)) 50% 0 repeat fixed, url(../images/parker.jpg) 50% 0 repeat fixed;
   background-size: cover;
   width: 100%;
   min-height: 300px; }
@@ -254,7 +254,8 @@ p, li {
 
 .about-me {
   height: 100%;
-  background: linear-gradient(to right, transparent 0%, transparent 50%, rgba(0, 0, 0, 0.6) 100%), url(../images/parker1.jpg) fixed center center no-repeat;
+  margin-bottom: 30px;
+  background: linear-gradient(to right, transparent 0%, transparent 50%, rgba(0, 0, 0, 0.6) 100%) 50% 0 repeat fixed, url(../images/parker1.jpg) 50% 0 repeat fixed;
   background-size: cover; }
 
 .journal {
@@ -262,7 +263,7 @@ p, li {
   width: 100%;
   margin: 0 auto;
   min-height: 100%;
-  background-color: #80bbd9; }
+  background: #80bbd9; }
   .journal h1 {
     text-align: center;
     margin-bottom: 30px; }

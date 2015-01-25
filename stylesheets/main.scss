@@ -77,7 +77,7 @@ p, li {
 
 .bg-head {
 
-    background:linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75)), url(../images/parker.jpg) fixed center center;
+    background:linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75)) 50% 0 repeat fixed, url(../images/parker.jpg) 50% 0 repeat fixed; 
     background-size: cover;
     width: 100%;
     
@@ -312,7 +312,8 @@ p, li {
 
 .about-me {
     height: 100%;
-    background:linear-gradient(to right, rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0)50%,rgba(0, 0, 0, 0.6)100%), url(../images/parker1.jpg) fixed center center no-repeat;
+        margin-bottom: 30px;
+    background:linear-gradient(to right, rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0)50%,rgba(0, 0, 0, 0.6)100%) 50% 0 repeat fixed, url(../images/parker1.jpg) 50% 0 repeat fixed; 
     background-size: cover;
 }
 
@@ -330,7 +331,7 @@ p, li {
     margin: 0 auto;
     
     min-height: 100%;
-    background-color: $primary-color-1;
+    background: $primary-color-1;
     h1 {
         text-align: center;
         margin-bottom: 30px;
