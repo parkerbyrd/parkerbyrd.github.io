@@ -7,7 +7,7 @@ $primary-text: #000000;
 $primary-color-1: #80bbd9;
 $primary-color-2: #095175;
 $primary-color-3: #7c602d;
-$header-font: "Helvetica Neue";
+$header-font: "proxima-nova";
 $main-font: "Garamond";
 $design-font: "elina-web-decor";
 $code-font: "jaf-mashine-rounded";
@@ -77,7 +77,7 @@ p, li {
 
 .bg-head {
 
-    background:linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75)) 50% 0 repeat fixed, url(../images/parker.jpg) 50% 0 repeat fixed; 
+    background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.75)) fixed, url(../images/trees.jpeg) fixed; 
     background-size: cover;
     width: 100%;
     
@@ -99,15 +99,21 @@ p, li {
     // left: 300px;
 }
 
+
+
 .main-nav {
-    
+    position: fixed;
+    z-index: 1;
     width: 100%;
     min-height: 54px;
-    background-color: black;
+    background-color: rgba(0,0,0,0.8);
     img {
         float: left;
         width: 50px;
         margin: 5px;
+        &:hover {
+            opacity: 0.8;
+        }
     }
     ul {
         text-align: right;
@@ -118,8 +124,8 @@ p, li {
         a {
             margin-left: 14px;
             display: inline-block;
-            font-size: 16px;
-            font-weight: 200;
+            font-size: 18px;
+            font-weight: 300;
             color: white;
             text-decoration: none;
             &:hover {
@@ -167,9 +173,10 @@ p, li {
     padding-bottom: 30px;
     color: white;
     text-shadow: 1px 1px 1px #000;
+    font-size: 20px;
     a {
         color: $primary-color-1;
-        text-decoration: dotted;
+        text-decoration: none;
         &:hover {
             color: $primary-color-2;
         }
@@ -208,6 +215,72 @@ p, li {
 }
 
 /////////////  Portfolio   ////////////////
+
+.project-button {
+    
+    font-size: 1.25em;
+    font-family: $header-font;
+    color: $primary-color-1;
+    border: 2px solid $primary-color-1;
+    transition-duration: 500ms;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    &:hover{
+        background-color: $primary-color-1;
+        color: white;
+
+    } 
+}
+
+#united {
+    
+    min-height: 600px;
+    background-color: #323a45;
+    padding-left: 20px;
+    // overflow: auto;
+    
+
+
+}
+.united-description {
+    width: 45%;
+    display: inline-block;
+    padding: 20px;
+    p {
+        padding-top: 250px;
+        color:white;
+    }
+
+}
+.united-img {
+    width: 45%;
+    float: right;
+    display: inline-block;
+    position: relative;
+    img {
+        width:600px;
+        position: absolute;
+        right: 0px;
+        
+    }
+}
+
+#crockett {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0.2)50%,rgba(0, 0, 0, 0.4)75%,rgba(0, 0, 0, 0.6)100%), url('../images/denistmockup.jpg') no-repeat fixed;
+    background-size: cover;
+    min-height: 600px;
+}
+.crockett-description {
+    width: 40%;
+    float: right;
+    padding: 20px;
+    padding-top: 200px;
+    
+    color:white;
+}
+
+
 .work {
     max-height: 400px;
     width: 100%;
@@ -311,7 +384,7 @@ p, li {
 //////////////// About Me /////////////
 
 .about-me {
-    height: 100%;
+    min-height: 600px;
         margin-bottom: 30px;
     background:linear-gradient(to right, rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0)50%,rgba(0, 0, 0, 0.6)100%) 50% 0 repeat fixed, url(../images/parker1.jpg) 50% 0 repeat fixed; 
     background-size: cover;
@@ -353,6 +426,7 @@ p, li {
 }
 
 .connect {
+    clear: both;
     width: 80%;
     margin: 0 auto;
     min-height: 400px;

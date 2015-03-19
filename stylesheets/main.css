@@ -54,7 +54,7 @@ html {
   margin: 0 auto; }
 
 h1, h3, h5, h6 {
-  font-family: "Helvetica Neue";
+  font-family: "proxima-nova";
   font-weight: 100; }
 
 h1 {
@@ -68,12 +68,12 @@ h3 {
   font-size: 2.5em; }
 
 p, li {
-  font-family: "Helvetica Neue";
+  font-family: "proxima-nova";
   font-size: 1.125em;
   line-height: 1.7; }
 
 .bg-head {
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.75)) 50% 0 repeat fixed, url(../images/parker.jpg) 50% 0 repeat fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.75)) fixed, url(../images/trees.jpeg) fixed;
   background-size: cover;
   width: 100%;
   min-height: 300px; }
@@ -89,13 +89,17 @@ p, li {
     color: white; }
 
 .main-nav {
+  position: fixed;
+  z-index: 1;
   width: 100%;
   min-height: 54px;
-  background-color: black; }
+  background-color: rgba(0, 0, 0, 0.8); }
   .main-nav img {
     float: left;
     width: 50px;
     margin: 5px; }
+    .main-nav img:hover {
+      opacity: 0.8; }
   .main-nav ul {
     text-align: right;
     padding: 16px; }
@@ -104,8 +108,8 @@ p, li {
     .main-nav li a {
       margin-left: 14px;
       display: inline-block;
-      font-size: 16px;
-      font-weight: 200;
+      font-size: 18px;
+      font-weight: 300;
       color: white;
       text-decoration: none; }
       .main-nav li a:hover {
@@ -143,10 +147,11 @@ p, li {
   padding-top: 30px;
   padding-bottom: 30px;
   color: white;
-  text-shadow: 1px 1px 1px #000; }
+  text-shadow: 1px 1px 1px #000;
+  font-size: 20px; }
   .welcome1 a {
     color: #80bbd9;
-    text-decoration: dotted; }
+    text-decoration: none; }
     .welcome1 a:hover {
       color: #095175; }
 
@@ -169,8 +174,56 @@ p, li {
   .alt-welcome p {
     width: 90%;
     max-width: 500px;
-    font-family: "Helvetica Neue";
+    font-family: "proxima-nova";
     margin: 0 auto; }
+
+.project-button {
+  font-size: 1.25em;
+  font-family: "proxima-nova";
+  color: #80bbd9;
+  border: 2px solid #80bbd9;
+  transition-duration: 500ms;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 10px; }
+  .project-button:hover {
+    background-color: #80bbd9;
+    color: white; }
+
+#united {
+  min-height: 600px;
+  background-color: #323a45;
+  padding-left: 20px; }
+
+.united-description {
+  width: 45%;
+  display: inline-block;
+  padding: 20px; }
+  .united-description p {
+    padding-top: 250px;
+    color: white; }
+
+.united-img {
+  width: 45%;
+  float: right;
+  display: inline-block;
+  position: relative; }
+  .united-img img {
+    width: 600px;
+    position: absolute;
+    right: 0px; }
+
+#crockett {
+  background: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.4) 75%, rgba(0, 0, 0, 0.6) 100%), url("../images/denistmockup.jpg") no-repeat fixed;
+  background-size: cover;
+  min-height: 600px; }
+
+.crockett-description {
+  width: 40%;
+  float: right;
+  padding: 20px;
+  padding-top: 200px;
+  color: white; }
 
 .work {
   max-height: 400px;
@@ -206,7 +259,7 @@ p, li {
     .work #overlay span {
       font-size: 2em;
       font-weight: 100;
-      font-family: "Helvetica Neue";
+      font-family: "proxima-nova";
       position: relative;
       top: 10px;
       color: white; }
@@ -229,7 +282,7 @@ p, li {
   text-align: center;
   margin-bottom: 30px; }
   .skillset-left li, .skillset-right li {
-    font-family: "Helvetica Neue";
+    font-family: "proxima-nova";
     font-weight: 200; }
   .skillset-left .icon, .skillset-right .icon {
     margin: 0 auto;
@@ -253,7 +306,7 @@ p, li {
   font-size: 50px; }
 
 .about-me {
-  height: 100%;
+  min-height: 600px;
   margin-bottom: 30px;
   background: linear-gradient(to right, transparent 0%, transparent 50%, rgba(0, 0, 0, 0.6) 100%) 50% 0 repeat fixed, url(../images/parker1.jpg) 50% 0 repeat fixed;
   background-size: cover; }
@@ -279,6 +332,7 @@ p, li {
   padding-bottom: 50px; }
 
 .connect {
+  clear: both;
   width: 80%;
   margin: 0 auto;
   min-height: 400px; }
@@ -336,7 +390,7 @@ footer {
       footer .main-footer .icons ul li {
         display: inline-block; }
         footer .main-footer .icons ul li a {
-          font-family: "Helvetica Neue";
+          font-family: "proxima-nova";
           color: white; }
           footer .main-footer .icons ul li a:hover {
             color: #d9d9d9; }
@@ -362,7 +416,7 @@ footer {
   .info-left p {
     line-height: 2;
     padding: 10px;
-    font-family: "Helvetica Neue";
+    font-family: "proxima-nova";
     font-weight: 200; }
   .info-left a {
     text-decoration: none;
@@ -371,7 +425,7 @@ footer {
   .info-left ul {
     padding: 10px; }
     .info-left ul li {
-      font-family: "Helvetica Neue";
+      font-family: "proxima-nova";
       font-weight: 200; }
 
 .img-right {
